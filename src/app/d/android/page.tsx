@@ -4,7 +4,9 @@ import { useEffect } from 'react';
 
 const AndroidRedirect: React.FC = () => {
   useEffect(() => {
-    window.location.href = 'https://play.google.com/store/apps/details?id=com.raizzify.hercules';
+    // window.location.href = 'https://play.google.com/store/apps/details?id=com.raizzify.hercules';
+
+    window.location.href = 'https://offer.raizzify.com/';
   }, []);
 
   return (
@@ -20,9 +22,17 @@ const AndroidRedirect: React.FC = () => {
         marginBottom: 16,
         textAlign: 'center',
       }}>
-        Redirecting to the Google Play Store...
+        Redirecting to offer.raizzify.com...
       </p>
-      <meta httpEquiv="refresh" content="0;url=https://play.google.com/store/apps/details?id=com.raizzify.hercules" />
+
+      {/*
+      <meta
+        httpEquiv="refresh"
+        content="0;url=https://play.google.com/store/apps/details?id=com.raizzify.hercules"
+      />
+      */}
+
+      <meta httpEquiv="refresh" content="0;url=https://offer.raizzify.com/" />
     </div>
   );
 };

@@ -4,8 +4,9 @@ import { useEffect } from "react";
 
 const IOSRedirect: React.FC = () => {
   useEffect(() => {
-    window.location.href =
-      "https://apps.apple.com/in/app/raizzify/id6636553867";
+    // window.location.href = "https://apps.apple.com/in/app/raizzify/id6636553867";
+
+    window.location.href = "https://offer.raizzify.com/";
   }, []);
 
   return (
@@ -25,13 +26,18 @@ const IOSRedirect: React.FC = () => {
           textAlign: "center",
         }}
       >
-        Redirecting to the App Store...
+        Redirecting to offer.raizzify.com...
       </p>
+
+      {/*
       <meta name="apple-itunes-app" content="app-id=id6636553867" />
       <meta
         httpEquiv="refresh"
         content="0;url=https://apps.apple.com/in/app/raizzify/id6636553867"
       />
+      */}
+
+      <meta httpEquiv="refresh" content="0;url=https://offer.raizzify.com/" />
     </div>
   );
 };
